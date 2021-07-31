@@ -1,7 +1,6 @@
 import {Component} from 'react';
 
 class Timer extends Component {
-
     state = {
         seconds : 0,
     };
@@ -10,6 +9,7 @@ class Timer extends Component {
 
     componentWillUnmount = () => {
         clearInterval(this.interval);
+    };
 
     componentDidMount= ()=>{
         this.interval = setInterval(
